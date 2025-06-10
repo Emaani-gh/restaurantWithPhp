@@ -1,24 +1,36 @@
-.home{
+.home {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
-.banner{
+.banner {
   height: 30vh;
-  background: url('./images/pizza.jpg');
+  background: url("./images/pizza.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-.sideCart{
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(33, 33, 33, 0.3);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideCart {
   display: none;
 }
-.left{
+.left {
   grid-column: 1 / span 3;
 }
 
-.categories{
+.categories {
   display: flex;
-  overflow-x:auto ;
+  overflow-x: auto;
   /* display: grid;
   grid-column: 1 / span 2;
   grid-auto-flow: column;
@@ -30,17 +42,17 @@
   background-color: #f8f5f2; */
 }
 
-.cateory-details > :last-child{
+.cateory-details > :last-child {
   margin-bottom: 1rem;
 }
 
-.crd{
+.crd {
   position: relative;
   padding: 1rem;
   background-color: white;
 }
 
-.crd-overlay{
+.crd-overlay {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -49,7 +61,7 @@
 .crd:hover .imge {
   transform: scale(1.05);
 }
-.overlay-text{
+.overlay-text {
   width: 100%;
   word-wrap: break-word;
 }
@@ -59,15 +71,14 @@
   display: none;
 }
 
- .priceLabel {
+.priceLabel {
   border: 1px solid gray;
   border-radius: 5px;
-  
+
   display: inline-block;
   padding: 5px 10px;
   cursor: pointer;
 }
-
 
 /*
  * With how I decided to build this, the position: relative is super important.
@@ -79,16 +90,14 @@
   line-height: 22px;
 }
 
-
 /* 
  * Because we're using pseudo elements, a content property is required to make them appear.
  */
 
 .priceLabel .priceSpan:before,
 .priceLabel .priceSpan:after {
-  content: '';
+  content: "";
 }
-
 
 .priceLabel .priceSpan:before {
   border: 1px solid #222021;
@@ -110,11 +119,9 @@
   opacity: 0;
 }
 
-
-.priceLabel .priceInput:checked+.priceSpan:after {
+.priceLabel .priceInput:checked + .priceSpan:after {
   opacity: 1;
 }
-
 
 /* .lprrrr{
   margin: 0 auto;
@@ -135,16 +142,16 @@
 
 /* =================================END OF CATEGORY SECTION===================================== */
 
-.cateory-details{
+.cateory-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(auto,auto));
+  grid-template-columns: repeat(auto-fit, minmax(auto, auto));
   gap: 1rem;
 }
 
-.categImg{
+.categImg {
   width: 100%;
   height: 150px;
-  background: url('./images/Burger.jpg');
+  background: url("./images/Burger.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -154,75 +161,74 @@
   padding: 0;
 } */
 
-
-.categ-header-text{
-  padding: 1rem .7rem;
+.categ-header-text {
+  padding: 1rem 0.7rem;
   background-color: #676874;
 }
-.crd-product{
+.crd-product {
   position: relative;
   /* background-color: rgb(88, 88, 88); */
 }
-.add{
+.add {
   cursor: pointer;
 }
 
-.add::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #ebebeb;
-    border-left: 1px solid #ebebeb;
-    border-radius: 0 2px 0 0;
-    color: #125fca;
-    font-size: 24px;
-    text-align: center;
-    content: "+";
+.add::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  border-radius: 0 2px 0 0;
+  color: #125fca;
+  font-size: 24px;
+  text-align: center;
+  content: "+";
 }
-.crd-product:hover{
+.crd-product:hover {
   background-color: rgba(175, 232, 240, 0.3);
 }
 /* ===================================MODAL======================= */
 
 /* ===========================================SIDE CART */
-.order{
-  padding: .7rem .5rem;
+.order {
+  padding: 0.7rem 0.5rem;
   border-radius: 15px;
 }
 .btnSub,
-.btnAdd{
+.btnAdd {
   width: 30px;
   border-radius: 50%;
-  padding: .2rem;
+  padding: 0.2rem;
   text-align: center;
-  opacity: .2;
+  opacity: 0.2;
   cursor: pointer;
 }
-.inner-extras{
+.inner-extras {
   /* height:300px ; */
 }
 
-.ex-wrap{
+.ex-wrap {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
-input[type=checkbox] {
+input[type="checkbox"] {
   transform: scale(1.5);
 }
 
 /* =====================================MEDIA=========================================== */
 @media only screen and (min-width: 600px) {
-  .left{
+  .left {
     grid-column: 1 / span 2;
   }
-  .sideCart{
+  .sideCart {
     display: block;
     grid-column: 3;
   }
-  .ex-wrap{
-    grid-template-columns: repeat(2,1fr);
+  .ex-wrap {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
