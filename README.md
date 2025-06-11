@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# PIZZA ORDERING APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic pizza restaurant web app that displays categories and products with prices and sizes. Includes add to cart, remove, and quantity adjustment features. built with React JS, PHP and MySQL."
 
-## Available Scripts
+## MOTIVE
 
-In the project directory, you can run:
+The goal of this project is to build a responsive and functional pizza restaurant web app that simplifies menu browsing and enhances the user experience with easy cart management. It sets the foundation for adding future features like order placement and payment integration.
 
-### `npm start`
+## TECH STACK
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## FEATURES
 
-### `npm test`
+- View product categories (e.g., Pizza, Salad, etc.)
+- Display products with sizes and dynamic pricing
+- Add items to cart and manage quantities
+- Remove items from cart
+- Responsive UI with Bootstrap
+- Backend API integration using PHP and MySQL
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## SET UP
 
-### `npm run build`
+### 🔹 Frontend (React)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   clone the repo
+   cd the repo
+   ```
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
 
-### `npm run eject`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔹 Backend (PHP)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Set up a local php server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. create and Update the database connection details in .env file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. update fetch url in Context.js to match your php endpoint
 
-## Learn More
+### 🔹 Database (MYSQL)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Create your database (run sql file)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Planned Features
 
-### Code Splitting
+- ordering functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Integrated payment system.
 
-### Analyzing the Bundle Size
+- Delivery request and tracking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Order history for users.
 
-### Making a Progressive Web App
+- Admin dashboard for managing orders
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## SCREENSHOT
 
-### Advanced Configuration
+![front page](src/images/mainpage.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![page Detail](src/images/extras.png)

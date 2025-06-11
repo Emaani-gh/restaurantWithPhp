@@ -2,13 +2,11 @@ import { Link } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import CategoriesProducts from "./CategoriesProducts";
 import { Context } from "./Context";
-import context from "react-bootstrap/esm/AccordionContext";
 
 const Leftpage = () => {
   const categories = useContext(Context).state.categories.filter(
     (ele) => ele.catimage != null
   );
-  console.log(useContext(Context));
 
   return (
     <div className="left">

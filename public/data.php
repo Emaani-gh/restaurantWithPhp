@@ -72,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['categories'])) {
 
 }
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['extras'])) {
     $sql = "SELECT pe.prdext_id,
     pe.cat_id,
